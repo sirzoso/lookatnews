@@ -1,0 +1,118 @@
+.bs-example{
+	padding-top: 52px;
+}
+
+.top-main{
+	text-align: center;
+}
+
+#top-index{
+	padding-top: 20px;
+}
+
+#title-views{
+	padding-top: 80px;
+}
+
+.card-img-top{
+	width: 100%;
+	height: auto;
+}
+
+.img-fluid{
+	width: 100%;
+}
+
+#control-formu{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#top-logo{
+	margin-top: 10px;
+	width: 20%;
+	height: auto;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+#logo{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card-header {
+	padding: 1.75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,.03);
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	margin-top: 0px;	
+}
+
+#section{
+	margin-bottom: 30px;
+}
+
+#act img{
+	width: 100%;
+	max-height: 530px;
+}
+
+#title-card{
+	font-size: 3.5vh;
+}
+
+#sub-title{
+	font-size: 1.5vh;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-footer{
+	padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.card{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body{
+	flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.h-100 {
+    height: 370px;
+}
+
+.j-100{
+	height: 250px;
+}
+
+#col4{
+	float: left;
+}
+
+#col8{
+	float: right;
+}
+
+#widget{
+	margin-bottom: 0px;
+}

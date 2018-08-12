@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LookAtNews | Add Notice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="css/footer_css.css">
+    <link rel="stylesheet" href="css/header_css.css">
+    <link rel="stylesheet" href="css/edit_css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body style="background-color: #ebebeb;">
+<% include _header%>
+<div class="container">
+    <h1 id="title-edit">Add Notice</h1>
+    <form action = "/noticeAdd" method="post" enctype="multipart/form-data">
+        <div class ="form-group">
+            <h2 id="text-edit">Image</h2>
+            <input name="myImage" type="file" class="btn btn-primary btn-block" required autofocus/>
+        </div>
+        <div class ="form-group">
+            <h2 id="text-edit">Name the news</h2>
+            <input name="notice" type="text" class="form-control"
+            placeholder="Add your notice" required autofocus/>
+        </div>
+        <div class="form-group">
+            <h2 id="text-edit">Description of the news</h2>
+            <textarea rows="5" id="desc" name="description" placeholder="Add the description" required autofocus></textarea>
+        </div>
+        <div class ="form-group">
+            <h2 id="text-edit">Categorie of the news</h2>
+            <select class="form-control" name="categorie">
+                <option value="Culture" required>Culture</option>
+                <option value="Politics" required>Politics</option>
+                <option value="Police" required>Police</option>
+                <option value="Economy" required>Economy</option>
+                <option value="Science" required>Science</option>
+                <option value="Sports" required>Sports</option>
+            </select>
+        </div>
+        <input type="submit" value="Upload" class="btn btn-primary btn-block"/>
+        
+    </form>
+</div>
+<% include _footer%>
+</body>

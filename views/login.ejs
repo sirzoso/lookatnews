@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Look At News | Log-In</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/login_css.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body></body>
+  <div class="limiter"></div>
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <form action="/login" method="POST" class="login100-form validate-form"><span class="login100-form-title p-b-26">Log-In</span><span class="login100-form-title p-b-48"><a href="/"><img id="logo" src="imgs/looknews.png" class="img-responsive"/></a></span>
+        <div class="wrap-input100 validate-input">
+          <input type="text" name="username" placeholder="Username" required="" class="input100"/>
+        </div>
+        <div class="wrap-input100 validate-input">
+          <input type="password" name="password" placeholder="Password" required="" class="input100"/>
+        </div>
+        <div class="check">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"/>Recordarme
+            </label>
+          </div>
+        </div>
+        <div class="forgot-pass-content"><a href="#" class="forgot-pass">Forgot my password</a></div>
+        <div class="container-login100-form-btn">
+          <div class="wrap-login100-form-btn">
+            <button id="btn-login" class="btn btn-primary">Log-In</button>
+          </div>
+        </div>
+        <div class="text-center p-t-115"><span class="txt1">Don't you have an account?</span><a href="/signup" class="txt2"> Sign-Up</a></div>
+      </form>
+    </div>
+  </div>
+</html>

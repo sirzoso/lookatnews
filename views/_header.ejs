@@ -1,0 +1,57 @@
+<nav id="bar-high" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#myNavbar" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand"><img id="logo" src="imgs/looknews.png"/></a>
+    </div>
+    <div id="myNavbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a data-toggle="dropdown" href="#" class="dropdown-toggle">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/culture">Culture</a></li>
+            <li><a href="/politics">Politics</a></li>
+            <li><a href="/police">Police</a></li>
+            <li><a href="/economic">Economy</a></li>
+            <li><a href="/science">Science </a></li>
+            <li><a href="/sports">Sports </a></li>
+          </ul>
+        </li>
+        <li><a href="/aboutus">About Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if (currentuser){ %>
+        <li><a href="/noticeAdd">Add Notice</a></li>
+        <li><a href="/notice_list">Notice List</a></li>
+        <li class="dropdown">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                <span id="user-con" class="fa fa-user"></span>Hello! <%= currentuser.name() %></a>
+          <ul class="dropdown-menu">
+            <li>
+                <a href="/edit">
+                    <span class="fa fa-users"></span> User role: <%= currentuser.rol() %></a>
+            </li>
+            <li>
+                <a href="/logout">
+                    <span class="fa fa-user-plus"></span> LogOut</a>
+            </li>
+        <% } else { %>
+        <li class="dropdown">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                <span id="user-con" class="fa fa-user"></span>Account</a>
+          <ul class="dropdown-menu">
+            <li>
+                <a href="/signup">
+                    <span class="fa fa-user-plus"></span> Sign Up</a>
+            </li>
+            <li>
+                <a href="/login">
+                    <span class="glyphicon glyphicon-log-in"></span> Login  </a>
+            </li>
+          </ul>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
+

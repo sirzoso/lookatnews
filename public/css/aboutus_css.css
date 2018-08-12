@@ -1,0 +1,48 @@
+.jumbotron{
+    margin-top: 52px;
+    background-image: url("../imgs/back.png");
+}
+
+#logo-about{
+    width: 30%;
+    height: auto;
+}
+
+#sub-top{
+    padding-top: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+#sub-content{
+    font-size: 20px;
+}
+
+#content-pe{
+    font-size: 25px;
+}
+
+#logo-tip{
+    width: 20%;
+}
+
+.glyphicon-signal{
+    font-size: 200px;
+}
+
+#master{
+    width: 65%;
+    height: auto;
+    border-radius: 160px;
+    display: block;
+    margin: auto;
+}
+
+#title-founder{
+    text-align: center;
+}
+
+#subti{
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,140 @@
+[{
+    "group":"invitado",
+    "permissions":[{
+        "resource":"/login",
+        "methods": ["GET","POST"],
+        "action":"allow"
+    },{
+        "resource":"/",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/aboutus",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/signup",
+        "methods":["GET","POST"],
+        "action":"allow"
+    
+    }]
+},
+{
+    "group":"user-boss",
+    "permissions":[{
+        "resource":"/",
+        "methods":["GET","POST"],
+        "action":"allow"
+    },{
+        "resource":"/aboutus",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/culture",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/politics",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/police",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/economic",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/science",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/sports",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/search",
+        "methods":"*",
+        "action":"allow"
+    },{
+        
+        "resource":"/login",
+        "methods":["GET","POST"],
+        "action":"allow"
+
+    },{
+        "resource":"/signup",
+        "methods":["GET","POST"],
+        "action":"allow"
+    },{
+        "resource":"/logout",
+        "methods":["GET", "POST"],
+        "action":"allow"
+    }]
+},{
+    "group":"user-master",
+    "permissions":[{
+        "resource":"/",
+        "methods":["GET","POST"],
+        "action":"allow"
+    },{
+        "resource":"/aboutus",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/culture",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/politics",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/police",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/economic",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/science",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/sports",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/edit",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/noticeAdd",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/notice_list",
+        "methods":"*",
+        "action":"allow"
+    },{
+        "resource":"/search",
+        "methods":"*",
+        "action":"allow"
+    },{
+        
+        "resource":"/login",
+        "methods":["GET","POST"],
+        "action":"allow"
+    },{
+        "resource":"/signup",
+        "methods":["GET","POST"],
+        "action":"allow"
+    },{
+        "resource":"/logout",
+        "methods": "*",
+        "action":"allow"
+    }]
+
+}]

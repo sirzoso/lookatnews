@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LookAtNews | Economy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="css/footer_css.css">
+    <link rel="stylesheet" href="css/header_css.css">
+    <link rel="stylesheet" href="css/edit_css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+</html>
+<body style="background-color: #ebebeb;">
+<% include _header %>
+<div class="container">
+    <div class="top-main"><a href="/"><img id="top-logo" src="imgs/looknews.png"></a>
+        <h1 class="mt-4 mb-3">News - Economy</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Look At News</li>
+        <li class="breadcrumb-item active">Economy</li>
+    </ol>
+        <div class="row">
+            <div class="col-md-8">
+                <% notices.forEach((notice)=>{ %>
+                <% notice.id %>
+                <% var source = "/uploads/myImage-" %>
+                <% source += notice.id %>
+                <% source += ".jpg" %>
+                <div id="section" class="card mb-4"><img src="<%= source %>" alt="Card image cap" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title"><%= notice.notice %></h2>
+                        <p class="card-text"><%= notice.description %></a>
+                    </div>
+                    <div class="card-footer text-muted"><%= notice.createdAt %><p><%= notice.categorie %></p></div>
+                </div>
+                <% }) %>
+                <ul class="pagination justify-content-center mb-4">
+                    <li class="page-item"><a href="/culture" class="page-link">Culture</a></li>
+                    <li class="page-item"><a href="/politics" class="page-link">Politics</a></li>
+                    <li class="page-item"><a href="/police" class="page-link">Police</a></li>
+                    <li class="page-item disabled"><a href="/economic" class="page-link">Economic</a></li>
+                    <li class="page-item"><a href="/science" class="page-link">Science</a></li>
+                    <li class="page-item"><a href="/sports" class="page-link">Sports</a></li>
+                </ul> 
+            </div>
+            <div class="col-md-4">
+                <div id="section" class="card mb-4">
+                    <h5 class="card-header">Search news</h5>
+                    <div class="card-body">
+                    <form class="form-inline md-form mr-auto mb-4" id="control-formu" method="post" action="/search">
+                        <input class="form-control" type="text" placeholder="Search by category" aria-label="Search" name="search">
+                        <button class="btn btn-secondary" type="submit" >Search</button>
+                    </form>
+                    </div>
+                </div>
+                <div id="section" class="card my-4">
+                    <h5 class="card-header">Categories</h5>
+                    <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="/culture">Culture</a></li>
+                            <li><a href="/politics">Politics</a></li>
+                            <li><a href="/police">Police</a></li>
+                        </ul>
+                        </div>
+                        <div class="col-lg-6">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="/economic">Economy</a></li>
+                            <li><a href="/science">Science </a></li>
+                            <li><a href="/sports">Sports </a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card my-4">
+                    <h5 class="card-header">Last Updates</h5>
+                    <% notices.forEach((notice)=>{ %>
+                    <% notice.id %>
+                    <% var source = "/uploads/myImage-" %>
+                    <% source += notice.id %>
+                    <% source += ".jpg" %>
+                    <div id="widget" class="card mb-4"><img src="<%= source %>" alt="Card image cap" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title" id><%= notice.notice %></h5>
+                      </div>
+                    </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include _footer %>
+</body>

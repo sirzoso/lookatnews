@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LookAtNews | Edit Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="css/footer_css.css">
+    <link rel="stylesheet" href="css/header_css.css">
+    <link rel="stylesheet" href="css/edit_css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+
+<% include _header %>
+
+<body style="background-color: #ebebeb;">
+<h1 id="title-edit" class="container"> Actualiza tu perfil</h1>
+    <form action="/edit" method="post" class="container">
+        <div class="form-group" id="form-edit">
+            <h2 id="text-edit">Account Name</h2>
+            <input name="displayName" type="text" class="form-control"
+            placeholder="Choose your username"
+            value="<%=currentuser.displayName || ""%>"/>
+        </div>
+        <div class="form-group" id="edit-bio">
+            <h2 id="text-edit">Bio</h2>
+            <textarea name="bio" class="form-control" placeholder="Talk everything about you">
+                <%=currentuser.bio || ""%>
+            </textarea>
+        </div>
+    <input type="submit" value="Update"  class="btn btn-primary btn-block" id="btn-edit"/>
+    </form>
+</body>
+</html>
+
+<% include _footer %>

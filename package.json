@@ -1,0 +1,29 @@
+{
+  "name": "zombie-social",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zombie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-acl": "^2.0.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.2.2",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  }
+}
